@@ -1,0 +1,21 @@
+{
+  "name": "qiankun-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:main": "cd main && yarn",
+    "install:sub-vue": "cd sub-vue && yarn",
+    "install:sub-react": "cd sub-react && yarn",
+    "serve": "npm-run-all --parallel start:*",
+    "start:main": "cd main && yarn serve",
+    "start:sub-react": "cd sub-react && yarn start",
+    "start:sub-vue": "cd sub-vue && yarn serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
