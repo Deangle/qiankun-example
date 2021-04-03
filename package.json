@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "install": "npm-run-all --serial install:*",
-    "install:main": "cd main && yarn",
-    "install:sub-vue": "cd sub-vue && yarn",
-    "install:sub-react": "cd sub-react && yarn",
+    "install:main": "cd main && npm install",
+    "install:sub-vue": "cd sub-vue && npm install",
+    "install:sub-react": "cd sub-react && npm install",
     "serve": "npm-run-all --parallel start:*",
-    "start:main": "cd main && yarn serve",
-    "start:sub-react": "cd sub-react && yarn start",
-    "start:sub-vue": "cd sub-vue && yarn serve"
+    "start:main": "cd main && npm run serve",
+    "start:sub-react": "cd sub-react && npm run start",
+    "start:sub-vue": "cd sub-vue && npm run serve"
   },
   "author": "",
   "license": "ISC",
